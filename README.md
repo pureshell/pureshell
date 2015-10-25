@@ -25,7 +25,7 @@ PureShell is implemented entirely in the shell command language.
 
     $ cd /vagrant/pureshell/
     $ sh install
-    $ . configure -d /vagrant/pureshell/ -p el -v 6
+    $ . configure -d /vagrant/provisioning/ -p el -v 6
 
 # How To Use
 
@@ -52,7 +52,13 @@ For example:
 
 # Modules
 
+- composer
+- epel
+- git
 - nano
+- nginx
+- nodejs
+- perl
 - php56
 - vim
 - webtatic
