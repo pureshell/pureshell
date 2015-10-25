@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo -e "\n--- Installing PureShell Provisioner ---\n"
+
+echo -e "Copy pureshell => /usr/bin/pureshell"
+sudo cp pureshell /usr/bin/pureshell
+
+echo -e "Grant read/execute permission to owner"
+sudo chmod u+rx /usr/bin/pureshell
+
+echo -e "\n--- PureShell installed! ---\n"
