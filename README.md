@@ -1,28 +1,43 @@
 PURESHELL
 =========
 
-Shell server provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debian.
+Shell server provisioner for Linux distributions.
+
+- RHEL/CentOS
+- Ubuntu
+- Debian
 
 
 # Installation
 
-Install and configure PureShell.
+##### Install:
 
     $ cd <pureshell_dir>
     $ sh install
+
+##### Configure:
+
     $ . configure -d <pureshell_dir> -p <platform> -v <version>
-    $ . configure -d /vagrant/provisioning/ -p el -v 6
+
+##### Vagrant example:
+
+    $ cd /vagrant/pureshell/
+    $ sh install
+    $ . configure -d /vagrant/pureshell/ -p el -v 6
 
 # How To Use
 
-Once installed, packages can be installed using:
+Once installed, packages can be installed like so:
 
     $ pureshell <package>
 
 For example:
 
-    $ pureshell webtatic
+    $ pureshell php56
 
 # Platforms
 
-    Enterprise Linux 6: -p el -v 6
+- Enterprise Linux: el
+    - Versions:
+        6
+        7
