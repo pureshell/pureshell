@@ -19,7 +19,7 @@ pureshell_install () {
 
     # Install package
     # if ! rpm -qa | grep -qw $PACKAGE; then
-        echo -e "\n--- Install ${PACKAGE} ---\n"
+        echo -e "\n--- Installing ${PACKAGE} ---\n"
         . "${PURESHELL_ROOT}${PURESHELL_PLATFORM}/${PACKAGE}".sh
     # else
     #   echo -e "\n--- ${PACKAGE} already installed ---\n"
