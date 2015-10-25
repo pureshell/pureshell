@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Set PHP package
 PHP=php56w
 

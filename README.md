@@ -1,11 +1,13 @@
 PURESHELL
 =========
 
-Shell server provisioner for Linux distributions.
+Simple server provisioner for Linux distributions.
 
 - RHEL/CentOS
 - Ubuntu
 - Debian
+
+PureShell is implemented entirely in the shell command language. 
 
 
 # Installation
@@ -41,3 +43,11 @@ For example:
     - Versions:
         6
         7
+
+# Modules
+
+- nano
+- php56
+- vim
+- webtatic
+- yum-plugin-replace
