@@ -9,6 +9,8 @@ Cross-platform support for Linux distributions:
 - Ubuntu
 - Debian
 
+[logo]: https://github.com/ericmdev/pureshell/blob/master/logo.png "PureShell"
+
 # Installation
 
 ##### Install:
