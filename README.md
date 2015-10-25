@@ -53,6 +53,7 @@ For example:
 # Modules
 
 - composer
+- elasticsearch
 - epel
 - git
 - nano
