@@ -1,4 +1,5 @@
-# Install webtatic
+#!/bin/sh
+
 if [[ "$PURESHELL_PLATFORM_VERSION" == "6" ]]; then
     sudo rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
 else if [[ "$PURESHELL_PLATFORM_VERSION" == "7" ]]; then
