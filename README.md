@@ -41,3 +41,13 @@ For example:
     - Versions:
         6
         7
+
+# Modules
+
+Modules include:
+
+- nano
+- php56
+- vim
+- webtatic
+- yum-plugin-replace
