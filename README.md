@@ -52,7 +52,11 @@ For example:
 
 # Modules
 
+- git
 - nano
+- nginx
+- nodejs
+- perl
 - php56
 - vim
 - webtatic
