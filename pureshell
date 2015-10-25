@@ -1,6 +1,14 @@
 #!/bin/sh
 if [[ -z "PURESHELL_ROOT" ]]; then
-    echo -e "Error: Please configure PureShell."
+    echo -e "Error: Please configure PureShell root directory."
+    exit 0
+fi
+if [[ -z "PURESHELL_PLATFORM" ]]; then
+    echo -e "Error: Please configure PureShell platform."
+    exit 0
+fi
+if [[ -z "PURESHELL_PLATFORM_VERSION" ]]; then
+    echo -e "Error: Please configure PureShell platform version."
     exit 0
 fi
 
@@ -10,12 +18,12 @@ pureshell_install () {
     PACKAGE=$1
 
     # Install package
-    if ! rpm -qa | grep -qw $PACKAGE; then
+    # if ! rpm -qa | grep -qw $PACKAGE; then
         echo -e "\n--- Install ${PACKAGE} ---\n"
         . "${PURESHELL_ROOT}${PURESHELL_PLATFORM}/${PACKAGE}".sh
-    else
-      echo -e "\n--- ${PACKAGE} already installed ---\n"
-    fi
+    # else
+    #   echo -e "\n--- ${PACKAGE} already installed ---\n"
+    # fi
 }
 
 pureshell_install $1
