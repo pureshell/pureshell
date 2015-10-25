@@ -37,6 +37,7 @@ For example:
 
 # Platforms
 
-Enterprise Linux 6:
-    
-    -p el -v 6
+- Enterprise Linux: el
+    - Versions:
+        6
+        7
