@@ -7,21 +7,21 @@ Shell provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debian.
 
 Install and configure PureShell.
 
-	$ cd <pureshell_dir>
-	$ sh install
-	$ . configure -d <pureshell_dir> -p <platform>
-	$ . configure /vagrant/provisioning/ el6
+    $ cd <pureshell_dir>
+    $ sh install
+    $ . configure -d <pureshell_dir> -p <platform> -v <version>
+    $ . configure -d /vagrant/provisioning/ -p el -v 6
 
 # How To Use
 
 Once installed, packages can be installed using:
 
-	$ pureshell <package>
+    $ pureshell <package>
 
 For example:
 
-	$ pureshell webtatic
+    $ pureshell webtatic
 
 # Platforms
 
-	Enterprise Linux 6: el6
+    Enterprise Linux 6: -p el -v 6
