@@ -1,7 +1,7 @@
 PURESHELL
 =========
 
-Simple server provisioner for Linux distributions.
+Shell server provisioner for Linux distributions.
 
 - RHEL/CentOS
 - Ubuntu
@@ -36,6 +36,12 @@ Once installed, packages can be installed like so:
 For example:
 
     $ pureshell php56
+
+
+# Help
+
+    $ pureshell --help
+
 
 # Platforms
 
