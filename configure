@@ -1,0 +1,47 @@
+#!/bin/sh
+
+echo -e "\n--- Configuring PureShell ---\n"
+
+# Get opts:
+# -d <pureshell_dir>
+# -p <platform>
+while getopts ":d:p:" opt; do
+	case $opt in
+		d)
+			PURESHELL_ROOT=$OPTARG
+			;;
+		p)
+			PURESHELL_PLATFORM=$OPTARG
+			if [[ "$PURESHELL_PLATFORM" == "el6" ]]; then
+				PURESHELL_PLATFORM_NAME="RedHat Enterprise Linux 6"
+			fi
+			;;
+		\?)
+			echo "Invalid option: -$OPTARG" >&2
+			exit 1
+			;;
+		:)
+			echo "Option -$OPTARG requires an argument." >&2
+			exit 1
+			;;
+	esac
+done
+
+if [[ -z "$PURESHELL_ROOT" ]]; then
+    echo -e "Error: Option -d <pureshell_dir> required."
+	exit 0
+fi
+
+if [[ -z "$PURESHELL_PLATFORM" ]]; then
+    echo -e "Error: Option -p <platform> required."
+	exit 0
+fi
+
+export PURESHELL_ROOT=$PURESHELL_ROOT;
+export PURESHELL_PLATFORM=$PURESHELL_PLATFORM;
+
+# Echo configuration
+echo -e "ROOT: $PURESHELL_ROOT"
+echo -e "Platform: $PURESHELL_PLATFORM"
+
+echo -e "\n--- PureShell Configured! ---\n"
