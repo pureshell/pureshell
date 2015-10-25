@@ -23,7 +23,7 @@ PureShell is implemented entirely in the shell command language.
 
 ##### Vagrant example:
 
-    $ cd /vagrant/pureshell/
+    $ cd /vagrant/provisioning/
     $ sh install
     $ . configure -d /vagrant/provisioning/ -p el -v 6
 
@@ -53,6 +53,7 @@ For example:
 # Modules
 
 - composer
+- elasticsearch
 - epel
 - git
 - nano
