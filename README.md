@@ -6,12 +6,20 @@ Shell server provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debia
 
 # Installation
 
-Install and configure PureShell.
+## Install:
 
     $ cd <pureshell_dir>
     $ sh install
+
+## Configure:
+
+Configure PureShell provisioning.
+
     $ . configure -d <pureshell_dir> -p <platform> -v <version>
-    $ . configure -d /pureshell/provisioning/ -p el -v 6
+
+Vagrant example:
+
+    $ . configure -d /vagrant/pureshell/ -p el -v 6
 
 # How To Use
 
@@ -25,4 +33,6 @@ For example:
 
 # Platforms
 
-    Enterprise Linux 6: -p el -v 6
+Enterprise Linux 6:
+    
+    . configure -d <dir> -p el -v 6-p el -v 6
