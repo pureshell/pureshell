@@ -1,14 +1,17 @@
 PURESHELL
 =========
 
-Simple server provisioner for Linux distributions.
+A simple provisioning system in the shell command language.
+
+Cross-platform support for Linux distributions:
 
 - RHEL/CentOS
 - Ubuntu
 - Debian
 
-PureShell is implemented entirely in the shell command language. 
-
+<p align="center">
+    <img src="https://github.com/ericmdev/pureshell/blob/master/logo.png?raw=true" height="100px" />
+</p>
 
 # Installation
 
@@ -23,9 +26,9 @@ PureShell is implemented entirely in the shell command language.
 
 ##### Vagrant example:
 
-    $ cd /vagrant/pureshell/
+    $ cd /vagrant/
     $ sh install
-    $ . configure -d /vagrant/pureshell/ -p el -v 6
+    $ . configure -d /vagrant/provisioning/ -p el -v 6
 
 # How To Use
 
@@ -37,6 +40,12 @@ For example:
 
     $ pureshell php56
 
+
+# Help
+
+    $ pureshell --help
+
+
 # Platforms
 
 - Enterprise Linux: el
@@ -46,7 +55,14 @@ For example:
 
 # Modules
 
+- composer
+- elasticsearch
+- epel
+- git
 - nano
+- nginx
+- nodejs
+- perl
 - php56
 - vim
 - webtatic

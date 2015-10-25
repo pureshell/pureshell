@@ -1,5 +1,5 @@
 #!/bin/sh
 
 sudo cp pureshell /usr/bin/pureshell
-sudo chmod u+rx /usr/bin/pureshell
+sudo chmod 777 /usr/bin/pureshell
 echo -e "PureShell installed!"
