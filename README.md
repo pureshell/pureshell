@@ -11,7 +11,7 @@ Install and configure PureShell.
     $ cd <pureshell_dir>
     $ sh install
     $ . configure -d <pureshell_dir> -p <platform> -v <version>
-    $ . configure -d /vagrant/provisioning/ -p el -v 6
+    $ . configure -d /pureshell/provisioning/ -p el -v 6
 
 # How To Use
 
