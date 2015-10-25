@@ -23,7 +23,7 @@ Shell server provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debia
 
 # How To Use
 
-Once installed, packages can be installed using:
+Once installed, packages can be installed like so:
 
     $ pureshell <package>
 
@@ -35,4 +35,4 @@ For example:
 
 Enterprise Linux 6:
     
-    . configure -d <dir> -p el -v 6-p el -v 6
+    . configure -d <pureshell_dir> -p el -v 6
