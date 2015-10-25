@@ -29,7 +29,7 @@ Once installed, packages can be installed like so:
 
 For example:
 
-    $ pureshell webtatic
+    $ pureshell php56
 
 # Platforms
 
