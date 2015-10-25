@@ -1,0 +1,17 @@
+#!/bin/sh
+
+pureshell_install () {
+
+	# Set Vars
+	PACKAGE=$1
+
+	# Install package
+	if ! rpm -qa | grep -qw $PACKAGE; then
+		echo -e "\n--- Install ${PACKAGE} ---\n"
+		. "${PURESHELL_ROOT}{PURESHELL_OS}/${PACKAGE}".sh
+	else
+		echo -e "\n--- ${PACKAGE} already installed ---\n"
+	fi
+}
+
+pureshell_install $1
