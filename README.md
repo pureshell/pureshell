@@ -52,6 +52,7 @@ For example:
 
 # Modules
 
+- composer
 - epel
 - git
 - nano
