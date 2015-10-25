@@ -6,14 +6,12 @@ Shell server provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debia
 
 # Installation
 
-**Install:**
+Install:
 
     $ cd <pureshell_dir>
     $ sh install
 
-**Configure:**
-
-Configure PureShell provisioning.
+Configure:
 
     $ . configure -d <pureshell_dir> -p <platform> -v <version>
 
