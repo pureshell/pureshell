@@ -1,7 +1,11 @@
 PURESHELL
 =========
 
-Shell server provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debian.
+Shell server provisioner for Linux distributions.
+
+- RHEL/CentOS
+- Ubuntu
+- Debian
 
 
 # Installation
