@@ -6,17 +6,19 @@ Shell server provisioner for Linux distributions - RHEL/CentOS, Ubuntu and Debia
 
 # Installation
 
-Install:
+##### Install:
 
     $ cd <pureshell_dir>
     $ sh install
 
-Configure:
+##### Configure:
 
     $ . configure -d <pureshell_dir> -p <platform> -v <version>
 
-Vagrant example:
+##### Vagrant example:
 
+    $ cd /vagrant/pureshell/
+    $ sh install
     $ . configure -d /vagrant/pureshell/ -p el -v 6
 
 # How To Use
