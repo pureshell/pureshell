@@ -22,7 +22,7 @@ Cross-platform support for Linux distributions:
 
 ##### Vagrant example:
 
-    $ cd /vagrant/provisioning/
+    $ cd /vagrant/
     $ sh install
     $ . configure -d /vagrant/provisioning/ -p el -v 6
 

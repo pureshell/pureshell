@@ -19,9 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "pureshell.dev"
 
   # vagrant --provision
-  config.vm.provision "pureshell-el6", type: "shell" do |sh|
-    sh.path = "provisioning/el6/bootstrap.sh.test"
-    sh.args = "development"
-  end
+  # config.vm.provision "pureshell-dev", type: "shell" do |sh|
+  #   sh.path = "provisioning/bootstrap.sh"
+  #   sh.args = "el 6"
+  # end
 
 end
