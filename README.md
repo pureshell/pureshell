@@ -17,3 +17,11 @@ Install and configure PureShell.
 Once installed, packages can be installed using:
 
 	$ pureshell <package>
+
+For example:
+
+	$ pureshell webtatic
+
+# Platforms
+
+	Enterprise Linux 6: el6
