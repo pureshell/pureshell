@@ -1,11 +1,13 @@
 PURESHELL
 =========
 
-Shell server provisioner for Linux distributions.
+Simple server provisioner for Linux distributions.
 
 - RHEL/CentOS
 - Ubuntu
 - Debian
+
+PureShell is implemented entirely in the shell command language. 
 
 
 # Installation
