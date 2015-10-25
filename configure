@@ -5,16 +5,23 @@ echo -e "\n--- Configuring PureShell ---\n"
 # Get opts:
 # -d <pureshell_dir>
 # -p <platform>
-while getopts ":d:p:" opt; do
+# -v <platform_version>
+while getopts ":d:p:v:" opt; do
 	case $opt in
 		d)
 			PURESHELL_ROOT=$OPTARG
 			;;
 		p)
 			PURESHELL_PLATFORM=$OPTARG
-			if [[ "$PURESHELL_PLATFORM" == "el6" ]]; then
-				PURESHELL_PLATFORM_NAME="RedHat Enterprise Linux 6"
+			if [[ "$PURESHELL_PLATFORM" == "el" ]]; then
+				PURESHELL_PLATFORM_NAME="RedHat Enterprise Linux"
+			else
+				echo "Invalid platform: $OPTARG" >&2
+				exit 1
 			fi
+			;;
+		v)
+			PURESHELL_PLATFORM_VERSION=$OPTARG
 			;;
 		\?)
 			echo "Invalid option: -$OPTARG" >&2
@@ -29,19 +36,25 @@ done
 
 if [[ -z "$PURESHELL_ROOT" ]]; then
     echo -e "Error: Option -d <pureshell_dir> required."
-	exit 0
 fi
 
 if [[ -z "$PURESHELL_PLATFORM" ]]; then
     echo -e "Error: Option -p <platform> required."
-	exit 0
+fi
+
+if [[ -z "$PURESHELL_PLATFORM_VERSION" ]]; then
+    echo -e "Error: Option -v <platform_version> required."
 fi
 
 export PURESHELL_ROOT=$PURESHELL_ROOT;
 export PURESHELL_PLATFORM=$PURESHELL_PLATFORM;
+export PURESHELL_PLATFORM_NAME;
+export PURESHELL_PLATFORM_VERSION;
 
 # Echo configuration
 echo -e "ROOT: $PURESHELL_ROOT"
-echo -e "Platform: $PURESHELL_PLATFORM"
+echo -e "Platform:"
+echo -e "\t Name: $PURESHELL_PLATFORM_NAME"
+echo -e "\t Version: $PURESHELL_PLATFORM_VERSION"
 
 echo -e "\n--- PureShell Configured! ---\n"
