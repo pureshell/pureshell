@@ -39,4 +39,4 @@ For example:
 
 Enterprise Linux 6:
     
-    . configure -d <pureshell_dir> -p el -v 6
+    -p el -v 6
