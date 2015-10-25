@@ -44,8 +44,6 @@ For example:
 
 # Modules
 
-Modules include:
-
 - nano
 - php56
 - vim
