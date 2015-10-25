@@ -18,4 +18,5 @@ case "$PURESHELL_PLATFORM_VERSION" in
     ;;
 *) echo "Failed: $PURESHELL_PLATFORM_PRETTYNAME not supported"
    ;;
+   
 esac
