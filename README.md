@@ -7,6 +7,8 @@ Shell server provisioner for Linux distributions.
 - Ubuntu
 - Debian
 
+PureShell is implemented entirely in the shell command language. 
+
 
 # Installation
 
@@ -23,7 +25,7 @@ Shell server provisioner for Linux distributions.
 
     $ cd /vagrant/pureshell/
     $ sh install
-    $ . configure -d /vagrant/pureshell/ -p el -v 6
+    $ . configure -d /vagrant/provisioning/ -p el -v 6
 
 # How To Use
 
@@ -35,6 +37,12 @@ For example:
 
     $ pureshell php56
 
+
+# Help
+
+    $ pureshell --help
+
+
 # Platforms
 
 - Enterprise Linux: el
@@ -44,7 +52,14 @@ For example:
 
 # Modules
 
+- composer
+- elasticsearch
+- epel
+- git
 - nano
+- nginx
+- nodejs
+- perl
 - php56
 - vim
 - webtatic

@@ -12,6 +12,45 @@ if [[ -z "PURESHELL_PLATFORM_VERSION" ]]; then
     exit 0
 fi
 
+package=pureshell
+
+# Get opts:
+# -d <pureshell_dir>
+# -p <platform>
+# -v <platform_version>
+while true $# -gt 0; do
+        case "$1" in
+                -h|--help)
+                        echo "$package - shell server provisioner"
+                        echo " "
+                        echo "$package [options] [packages]"
+                        echo " "
+                        echo "options:"
+                        echo -e "\t -h, --help  show brief help"
+                        echo -e "\t -f, --force try force install"
+                        echo "arguments:"
+                        echo -e "\t git: Git version control"
+                        echo -e "\t nano: Nano"
+                        echo -e "\t php56: PHP 5.6"
+                        echo -e "\t vim: Vim"
+                        echo -e "\t Webtatic: Webtatic Yum repositorys"
+                        echo -e "\t yum-plugin-replace: Yum Plugin Replace"
+                        exit 0
+                        ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            exit 1
+            ;;
+        :)
+            echo "Option -$OPTARG requires an argument." >&2
+            exit 1
+            ;;
+        *)
+                break
+                ;;
+    esac
+done
+
 pureshell_install () {
 
     # Set Vars
