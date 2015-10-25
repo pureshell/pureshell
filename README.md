@@ -34,10 +34,11 @@ Once installed, packages can be installed like so:
 For example:
 
     $ pureshell php56
+    $ pureshell nodejs npm
 
 # Platforms
 
-- Enterprise Linux: el
+- Enterprise Linux [el]
     - Versions:
         6
         7
